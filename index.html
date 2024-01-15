@@ -1,69 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
-  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <title>Frotend Mentor | Newsletter </title>
 </head>
 <body>
+    
+    <main>
+        <div class="card">
+            <div class="left">
+                <h1>Stay updated!</h1>
+                <p>Join 60,000+ product managers receiving monthly updates on:</p>
 
-  <!-- Sign-up form start -->
-  <div class="container">
-    <div class="left-side">
-      <h1>Stay updated!</h1>
-      <p>Join 60,000+ product managers receiving monthly updates on:</p>
+                <div class="list">
+                    <div class="item">
+                        <img src="images/icon-list.svg" alt="">
+                        <p>Product discovery and building what matters</p>
+                    </div>
 
-      <div class="list">
-        <div class="item">
-          <img src="images/icon-list.svg" alt="icon list">
-          Product discovery and building what matters
+                    <div class="item">
+                        <img src="images/icon-list.svg" alt="">
+                        <p>Measuring to ensure updates are a success</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/icon-list.svg" alt="">
+                        <p>And much more!</p>
+                    </div>
+                </div>
+
+
+                <form>
+                    <label for="email">Email Adress</label>
+                    <input type="email" id="email" placeholder="email@company.com">
+                    <button type="submit">Subscribe to Monthly Newsletter</button>
+                </form> <!-- end form -->
+            </div> <!-- end left -->
+            <div class="right">
+                <img src="images/illustration-sign-up-desktop.svg" alt="">
+            </div>
+        </div> <!-- end card 1 -->
+        
+        <!-- sucess mesage -->
+        <div class="card-2 hide">
+            <img src="images/icon-success.svg" alt="" class="icon-card-2">
+            <h1>Thanks for Subscribing</h1>
+            <p>A confirmation email has been sent to ash@loremcompany.com. Please open it and click the button inside to confirm your subscription.</p>
+            <button>Dismiss message</button>
         </div>
+    </main>
 
-        <div class="item">
-          <img src="images/icon-list.svg" alt="icon list">
-          Measuring to ensure updates are a success
-        </div>
-
-        <div class="item">
-          <img src="images/icon-list.svg" alt="icon list">
-          And much more!
-        </div>
-
-      </div> <!-- end list-->
-
-      <div class="email">
-        <h3>Email address</h3>
-        <input type="text" placeholder="email@company.com" class="input">
-      </div> <!-- end email -->
-
-      <button>Subscribe to monthly newsletter</button>
-
-    </div><!-- end left side -->
-
-    <div class="right-side">
-      <img src="images/illustration-sign-up-desktop.svg" alt="">
+   
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/Tatyane-Goncalves/17-Newsletter" target="_blank">Tatyane Gonçalves</a>.
     </div>
 
-  </div> <!-- end container -->
 
-  <!-- Sign-up form end -->
+    <script src="app.js"></script>
 
-  <!-- Success message start -->
-
-  Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
-
-  <!-- Success message end -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Tatyane Gonçalves</a>.
-  </div>
 </body>
 </html>
